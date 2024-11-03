@@ -1,5 +1,8 @@
 # angle-image-overlay
-A tool to overlay angle dimensions on an image.
+A simple tool to manually overlay angle dimensions on an image.
+
+Try it here! -->
+https://ericnelson12.github.io/angle-image-overlay/
 
 # Example
 
