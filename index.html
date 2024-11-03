@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Angle Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div id="canvas-container">
+        <canvas id="canvas" width="600" height="400"></canvas>
+    </div>
+
+    <div id="sidebar">
+        <h3>Controls</h3>
+
+        <!-- Dot Position Controls with Color Pickers -->
+        <div id="dot-controls">
+            <div class="control-group">
+                <label for="dot1-x">Red Dot Position (X, Y) and Color:</label>
+                <input data-dot-name="dot1" class="x-coord" type="number" placeholder="X-coordinate" value="200">
+                <input data-dot-name="dot1" class="y-coord" type="number" placeholder="Y-coordinate" value="100">
+                <input data-dot-name="dot1" type="color" value="#ff0000">
+            </div>
+            <div class="control-group">
+                <label for="dot2-x">Blue Dot Position (X, Y) and Color:</label>
+                <input data-dot-name="dot2" class="x-coord" type="number" placeholder="X-coordinate" value="200">
+                <input data-dot-name="dot2" class="y-coord" type="number" placeholder="Y-coordinate" value="200">
+                <input data-dot-name="dot2" type="color" value="#0000ff">
+            </div>
+            <div class="control-group">
+                <label for="dot3-x">Yellow Dot Position (X, Y) and Color:</label>
+                <input data-dot-name="dot3" class="x-coord" type="number" placeholder="X-coordinate" value="300">
+                <input data-dot-name="dot3" class="y-coord" type="number" placeholder="Y-coordinate" value="100">
+                <input data-dot-name="dot3" type="color" value="#ffff00">
+            </div>
+        </div>
+
+        <!-- Angle Section -->
+        <div id="angle-section" class="control-group">
+            <h4>Angle Controls</h4>
+            
+            <!-- Angle Visibility Toggle -->
+            <div class="control-group">
+                <label>Angle Display:</label>
+                <button id="toggle-angle">Toggle Angle Visibility</button>
+            </div>
+
+            <!-- Line color and thickness controls -->
+            <div class="control-group">
+                <label for="line-color">Line Color:</label>
+                <input type="color" id="line-color" value="#000000">
+
+                <label for="line-thickness">Line Thickness:</label>
+                <input type="number" id="line-thickness" value="1">
+            </div>
+        </div>
+
+        <!-- Background Image Upload Area -->
+        <div id="image-upload" class="control-group">
+            <label>Background Image:</label>
+            <div id="drop-zone">
+                <p>Drag an image here or click to select</p>
+                <input type="file" id="file-input" accept="image/*">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JavaScript Import -->
+    <script src="script.js"></script>
+</body>
+
+</html>
